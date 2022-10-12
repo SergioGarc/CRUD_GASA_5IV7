@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEN10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titlulo">BEN 10</h1>
+    <br>
+    <a href="/obtenerPersonaje">Consulta tus personajes</a>
+    <br>
+    <table class="tabla">
+        <tr>
+    <form action="/agregarPersonaje" method="post">
+        <br>
+        <input class="input" type="number" min="1" max="200" name="id" placeholder="ID">
+        <br>
+        <br>
+        <input class="input" type="text" name="nombre" placeholder="nombre">
+        <br>
+        <br>
+        <input class="input" type="number" name="omnitrix" placeholder="Omnitrix">
+        <br>
+        <br>
+        <input class="agregar" type="submit" value="Agregar Personaje">
+        <br>
+        <br>
+    </form>
+</tr>
+
+<tr>
+    <form action="/eliminarPersonaje" method="post">
+        
+        <input class="input" type="text" name="usuario" placeholder="¿Que personaje eliminas?">
+        <br>
+        <br>
+        <input class="eliminar" type="submit" value="Eliminar Personaje">
+        <br>
+        <br>
+    </form>
+</tr>
+  
+<tr>
+    <form action="/actualizarPersonaje" method="post">
+        <input class="input" type="text" name="oriName" placeholder="Nombre a cambiar">
+        <br>
+        <br>
+        <input class="input" type="text" name="nomUpdate" placeholder="Nuevo nombre">
+        <br>
+        <br>
+        <input class="cambiar" type="submit" value="Cambiar Personaje">
+        <br>
+        <br>
+    </form>
+</tr>
+</table>
+</body>
+</html>
