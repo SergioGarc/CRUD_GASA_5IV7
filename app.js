@@ -6,10 +6,11 @@ var bodyParser= require('body-parser');
 
 var con= mysql.createConnection({
 
-    host: 'localhost',
+    host: 'containers-us-west-55.railway.app',
     user: 'root',
-    password: 'n0m3l0',
-    database: 'ben'
+    password: 'mNIkvgId32q9h3976bOZ',
+    database: 'railway',
+    port: '5483'
 });
 
 con.connect();
@@ -40,9 +41,10 @@ app.post('/agregarPersonaje', (req, res)=>{
     );
 });
 
-app.listen(3232, ()=>{
+const PORT = process.env.PORT || 5483;
+app.listen(5483, ()=>{
 
-    console.log("Servicio en el puerto 3232");
+    console.log("Servicio en el puerto 5483");
 }
 
 )
