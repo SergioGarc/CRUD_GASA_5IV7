@@ -42,7 +42,7 @@ app.post('/agregarPersonaje', (req, res)=>{
 });
 
 const PORT = process.env.PORT || 5483;
-app.listen(5483, ()=>{
+app.listen(PORT, ()=>{
 
     console.log("Servicio en el puerto 5483");
 }
